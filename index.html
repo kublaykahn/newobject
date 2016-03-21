@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Javascript - Objects</title>
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+$(document).ready(function(){
+
+  var me = {
+                  "first":"Nick",
+                  "last":"Cano",
+                  "employer":["Cooper Union Photo Lab"],
+                  "placeOfResidence":"Boynton Beach",
+                  "currentLocation":"New York"
+              };
+              var Myself = "My name is Marvin, but everyone calls me" + me.first + ". ";
+              var job = "I work at " + me.employer + " and I am currently living in  " + me.currentLocation + ". ";
+              var home = "I'm actually from " + me.placeOfResidence + ".";
+
+              console.log(Myself);
+              console.log(job);
+              console.log(home);
+
+              $("body").append(Myself, job, home);
+
+});
+          </script>
+        </head>
+        <body>
+
+        </body>
+      </html>
